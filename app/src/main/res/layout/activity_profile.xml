@@ -63,27 +63,11 @@
 
     <ImageView
         android:id="@+id/GreyBG1"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userProfileBG"
-        app:srcCompat="@android:color/darker_gray" />
-
-    <ImageView
-        android:id="@+id/GreyBG2"
-        android:layout_width="200dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/GreyBG1"
         app:layout_constraintTop_toBottomOf="@+id/userProfileBG"
         app:srcCompat="@android:color/darker_gray" />
 
@@ -91,9 +75,10 @@
         android:id="@+id/followingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
         android:text="Following"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/GreyBG1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/GreyBG1" />
 
@@ -101,43 +86,39 @@
         android:id="@+id/followersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:text="Followers"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/GreyBG2"
-        app:layout_constraintTop_toTopOf="@+id/GreyBG2" />
+        app:layout_constraintTop_toTopOf="@+id/GreyBG1" />
 
     <TextView
         android:id="@+id/following"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="following"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:gravity="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/GreyBG1"
-        app:layout_constraintEnd_toStartOf="@+id/GreyBG2"
-        app:layout_constraintStart_toStartOf="@+id/GreyBG1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/followingText"
-        tools:text="following" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="followers"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:foregroundGravity="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/GreyBG2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/GreyBG2"
+        app:layout_constraintBottom_toBottomOf="@+id/GreyBG1"
+        app:layout_constraintEnd_toEndOf="@+id/GreyBG1"
         app:layout_constraintTop_toBottomOf="@+id/followersText"
-        tools:text="followers" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/aboutText"
@@ -145,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="About Me"
         android:textSize="24sp"
         android:textStyle="bold"
