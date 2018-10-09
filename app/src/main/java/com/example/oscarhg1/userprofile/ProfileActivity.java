@@ -48,15 +48,15 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         Glide.with(this)
-               .load("file:///android_asset/JohnDoe.png")
+               .load("file:///android_asset/OscarHernandez.png")
                .into(userProfileMain);
         Glide.with(this)
-               .load("file:///android_asset/UserProfile-background.jpg")
+               .load("file:///android_asset/UserProfile-background.png")
                .into(userProfileBG);
 
 
         try {
-            InputStream stream = getAssets().open("JohnDoe.json");
+            InputStream stream = getAssets().open("OscarHernandez.json");
             InputStreamReader reader = new InputStreamReader(stream);
             profile = gson.fromJson(reader, Profile.class);
         } catch (IOException e) {
